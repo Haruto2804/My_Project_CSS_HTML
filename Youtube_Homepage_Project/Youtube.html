@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/video.css">
+</head>
+<body>
+  <div class = "header">
+    <div class = "left-section">
+      <img class = "hamburger-menu" src="icons-header/hamburger-menu.svg" alt="">
+      <img class = "youtube-logo" src="icons-header/youtube-logo.svg" alt="">
+    </div>
+    <div class = "middle-section">
+      <div class = "search-bar-container">
+        <input class = "search-bar" type="text" placeholder="Search">
+      </div>
+      <button class = "search-button-container">
+        <img class = "search-button-img"src="icons-header/search.svg" alt="">
+        <div class = "tooltip">Search</div>
+      </button>
+      <button class = "voice-search-button-container">
+        <img class = "voice-search-button-img"src="icons-header/voice-search-icon.svg" alt="">
+        <div class = "tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class = "right-section">
+      <div class = "upload-container">
+        <img class = "upload-icon" src="icons-header/upload.svg" alt="">
+        <div class = "tooltip">Create</div>
+      </div>
+      <div class = "youtube-apps-container">
+        <img class = "youtube-apps-icon" src="icons-header/youtube-apps.svg" alt="">
+        <div class = "tooltip">Youtube apps</div>
+      </div>
+
+      <div class = "notifications-container">
+        <img class = "notifications-icon "src="icons-header/notifications.svg" alt="">
+        <p class = "notifications-count-container">9</p>
+        <div class = "tooltip">Notifications</div>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/@haruto2804">
+          <img class = "current-user-picture" src="icons-header/Haruto_picture.jpg" alt="">
+        </a>
+      </div>
+      
+    </div>
+  </div>
+  <div class = "sidebar">
+    <div class = "sidebar-link">
+      <img class = "home-icon" src="icons-sidebar/home.svg" alt="">
+      <p>Home</p>
+    </div>
+    <div class = "sidebar-link">
+      <img class = "explore-icon" src="icons-sidebar/explore.svg" alt="">
+      <p>Explore</p>
+    </div>
+    <div class = "sidebar-link">
+        <img class = "subscriptions-icon" src="icons-sidebar/subscriptions.svg" alt="">
+        <p>Subscriptions</p>
+    </div>
+    <div class = "sidebar-link">
+      <img class = "originals-icon" src="icons-sidebar/originals.svg" alt="">
+        <p>Originals</p>
+    </div>
+    <div class = "sidebar-link">
+      <img class = "youtube-music-icon" src="icons-sidebar/youtube-music.svg" alt="">
+        <p>Youtube Music</p>
+    </div>
+    <div class = "sidebar-link">
+      <img class = "library-icon" src="icons-sidebar/library.svg" alt="">
+        <p>Library</p>
+  </div>
+  </div>
+
+
+
+
+
+  <div class = "grid-video">
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-1.webp" alt="">
+        <div class = "video-time">14:20</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-1.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title">
+            <a class = "video-link" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </a>
+            </div>
+            
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/c/mkbhd">Marques Brownlee</a>
+          </div>
+          <div class = "video-views">4.3M views &middot; 4 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-2.webp" alt="">
+        <div class = "video-time">8:22</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-2.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link" href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              Try Not To Laugh Challenge #9
+            </a></div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/c/markiplier">Markiplier</a>
+          </div>
+          <div class = "video-views">21M views &middot; 7 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-3.webp" alt="">
+        <div class = "video-time">9:13</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-3.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">Crazy Tik Toks Taken Moments Before DISASTER</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link  "href="https://www.youtube.com/user/SSSniperWolf">SSniperWolf</a>
+          </div>
+          <div class = "video-views">14M views &middot; 5 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-4.webp" alt="">
+        <div class = "video-time">22:09</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-4.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link"href="https://www.youtube.com/watch?v=094y1Z2wpJg">The Simplest Math Problem No One Can Solve - Collatz Conjecture</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/c/veritasium">Veritasium</a>
+          </div>
+          <div class = "video-views">44M views &middot; 4 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-5.webp" alt="">
+        <div class = "video-time">11:17</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-5.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link" href="https://www.youtube.com/watch?v=86CQq3pKSUw">Kadane's Algorithm to Maximum Sum Subarray Problem</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/c/CSDojo">CS Dojo</a>
+          </div>
+          <div class = "video-views">760K views &middot; 9 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-6.webp" alt="">
+        <div class = "video-time">19:59</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-6.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link"href="https://www.youtube.com/watch?v=yXWw0_UfSFg">Anything You Can Fit In The Circle I'll Pay For</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">MrBeast</a>
+          </div>
+          <div class = "video-views">325 views &middot; 5 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-7.webp" alt="">
+        <div class = "video-time">10:13</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-7.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link"href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">Why Planes Don't Fly Over Tibet</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link" href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">RealLifeLore</a>
+          </div>
+          <div class = "video-views">8.4M views &middot; 4 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-8.webp" alt="">
+        <div class = "video-time">7:12</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-8.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link"href="https://www.youtube.com/watch?v=lFm4EM1juls">Inside The World's Biggest Passenger Plane</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">Tech Vision</a>
+          </div>
+          <div class = "video-views">9.7M views &middot; 4 years ago</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-9.webp" alt="">
+        <div class = "video-time">13:17</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-9.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link"href="https://www.youtube.com/watch?v=ixmxOlcrlUc">The SECRET to Super Human STRENGTH</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS">ThenX</a>
+          </div>
+          <div class = "video-views">24M views &middot; 7 years ago</div>
+        </div>
+      </div>
+    </div>
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-10.webp" alt="">
+        <div class = "video-time">7:53</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-10.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link" href="https://www.youtube.com/watch?v=R2vXbFp5C9o">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/user/businessinsider">Business Insider</a>
+          </div>
+          <div class = "video-views">21M views &middot; 5 years ago</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-11.webp" alt="">
+        <div class = "video-time">4:10</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-11.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "video-link"href="https://www.youtube.com/watch?v=0nZuYyXET3s">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/c/Destinationtips">Destination Tips</a>
+          </div>
+          <div class = "video-views">4.7M views &middot; 5 years ago</div>
+        </div>
+      </div>
+    </div>
+      <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-12.webp" alt="">
+        <div class = "video-time">4:51</div>
+        </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/channel-12.jpeg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >
+            <a class = "channel-link"href="https://www.youtube.com/watch?v=9iMGFqMmUFs">What would happen if you didn’t drink water?</a>
+          </div>
+          <div class = "author" >
+            <a class = "channel-link"href="https://www.youtube.com/teded">TED-Ed</a></div>
+          <div class = "video-views">22M views &middot; 9 years ago</div>
+      </div>
+    </div>
+    </div>
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-13.png" alt="">
+        <div class = "video-time">30:00</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/haruto_picture.jpg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >LIVE STREAM | CÁCH ĐỂ LEO CHIẾN THẦN | 13/9/2025 |</div>
+          <div class = "author" >Haruto</div>
+          <div class = "video-views">646 views &middot; 1 days ago</div>
+        </div>
+        </div>
+      </div>
+    <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-14.png" alt="">
+        <div class = "video-time">25:00</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/haruto_picture.jpg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >CÁCH ĐỂ LÀM LÍNH CỤ HỒ</div>
+          <div class = "author" >Haruto</div>
+          <div class = "video-views">578B views &middot; 3 weeks ago</div>
+        </div>
+      </div>
+    </div>
+      <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-15.png" alt="">
+        <div class = "video-time">30:00</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/haruto_picture.jpg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" >TÔI ĐÃ MẤT TRẮNG VÌ ĐẦU TƯ SAI CÁCH - VÀ CÁCH TÔI LÀM LẠI TỪ ĐẦU</div>
+          <div class = "author" >Haruto</div>
+          <div class = "video-views">666 views &middot; 2 months ago</div>
+        </div>
+        </div>
+      </div>
+      <div class = "preview-video">
+      <div class = "thumbnail-container">
+        <img class = "video-picture" src="thumbnail/thumbnail-16.png" alt="">
+        <div class = "video-time">30:00</div>
+      </div>
+      <div class = "video-info-container">
+        <div class = "channel-picture-container">
+          <img  class ="channel-picture" src="channel-pictures/haruto_picture.jpg" alt="">
+        </div>
+        <div class = "video-info">
+          <div class = "title" > 5 BÀI TẬP GIÚP BẠN TRỞ THÀNH CẦU THỦ GIỎI GIỐNG NKUNKU</div>
+          <div class = "author" >Haruto</div>
+          <div class = "video-views">782B views &middot; 5 days ago</div>
+        </div>
+        </div>
+      </div>
+    
+  </div>
+
+</body>
+</html>
