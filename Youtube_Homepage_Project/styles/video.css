@@ -1,10 +1,8 @@
-.grid-video a {
-  display: block;
-}
+
 .grid-video {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-top: 57px;
   margin-left: 74px;
   z-index: 0;
@@ -12,8 +10,8 @@
 .preview-video {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
   color: inherit; 
+  padding: 20px;
 }
 .preview-video:hover {
   cursor: pointer;
@@ -24,6 +22,7 @@
   text-decoration: none;
   color: #606060; /* giống màu YouTube */
   font-size: 14px;
+  line-height: 0;
 }
 .channel-link:hover {
   color: black; /* hover đổi màu */
@@ -47,10 +46,6 @@
   .grid-video {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-}
-.preview-video {
-  padding-top: 25px;
-  padding-left: 25px;
 }
 .video-info-container {
   display: grid;
