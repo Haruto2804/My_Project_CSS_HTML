@@ -1,0 +1,36 @@
+.stories-bar {
+  display: flex;
+  flex-direction: row;
+  height:108px;
+  justify-content: center;
+  padding: 8px 9px;
+  gap: 30px;
+  
+}
+.stories-bar img {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;;
+  padding: 3px;
+  background: conic-gradient(
+    #feda75, /* vàng */
+    #fa7e1e, /* cam */
+    #d62976, /* hồng */
+    #962fbf, /* tím */
+    #4f5bd5, /* xanh tím */
+    #feda75 /* quay lại vàng */
+  );
+}
+.username {
+  color: white;
+  margin-top: 0px;
+  font-size: 12px;
+}
+.stories-bar-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
