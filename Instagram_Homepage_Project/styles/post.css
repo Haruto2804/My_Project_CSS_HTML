@@ -8,7 +8,7 @@
   margin-bottom: 15px;
   border-width: 0.25px;
 }
-.post-user-details-container {
+.post__header {
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -19,23 +19,23 @@
   justify-content: space-between;
   width:100%;
 }
-.post-user-details-left {
+.post__user {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.post-picture {
+.main-post__picture {
   width: 468px;
   height:624px;
   object-fit: cover;
   object-position: right;
   border-radius: 7px;
 }
-.post-username {
+.post__user--name {
   color: white;
 }
-.post-user-picture {
+.post__user--picture {
   width: 35px;
   height: 35px;
   object-fit: cover;
@@ -50,14 +50,14 @@
     #feda75 /* quay lại vàng */
   );
 }
-.post-time {
+.post__user--time {
   color:gray;
 }
 /* POST - BUTTON - BAR CSS */
 .post-button-bar img {
   width: 30px;
 }
-.post-button-bar {
+.main-post__interactionBar {
   display: flex;
   align-items: center;
   width:468px;
@@ -65,57 +65,57 @@
   flex-direction: row;
   align-items: center;
   gap: 50px;
+  
 }
-.left-post-button-bar {
+.main-post__interactionBar_left {
   display: flex;
   gap: 10px;
+  margin-top: 15px;
 }
-.like-container  {
-  width:100%;
-}
-.like {
+.main-post__like  {
   color: white;
   text-align: left;
   margin-top: 0px;
   font-weight: 500;
   font-size: 15px;
+  width:100%;
 }
 
 /* CAPTION CONTAINER  */
-.caption-container {
+.main-post__content {
   font-size: 14px;
   margin-top: -15px;
   width:100%;
   display: flex;
   flex-direction: column;
 }
-.caption-flexbox {
+.content__caption {
   display: flex;
   gap: 10px;
 }
-.hashtag {
+.hashtag--blue {
   color: rgb(88, 126, 207);
   cursor: pointer;
   width:fit-content
 }
-.hashtag:active {
+.hashtag--blue:active {
   color:#4f5bd5
 }
-.hashtag-container p {
+.content__hashtag p {
   display: inline-block;
   margin-top: -10px;
 }
-.translation-container {
+.main-post__translation {
   width:100%;
   margin-top: -14px;
 }
-.translation-container p {
+.translation__button {
   font-size: 14px;
   margin-top: 0px;
   font-weight: 500;
   cursor: pointer;
 }
-.view-comments-container {
+.main-post__viewComments {
   width:100%;
   margin-top: -14px;
 }
@@ -124,14 +124,14 @@
   margin-top: 0;
   cursor: pointer;
 }
-.add-comment-container {
+.main-post__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width:100%;
 }
-.add-comment-input-container {
+.footer__input {
   margin-top: -5px;
   display: flex;
   flex: 1;

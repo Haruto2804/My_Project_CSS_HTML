@@ -1,0 +1,112 @@
+.suggestion-bar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-right: 110px;
+  width: 319px;
+  height: 547px;
+}
+.suggestion-bar__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.suggestion-bar__picture {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;;
+}
+.suggestion-bar p {
+  font-size: 14px;
+  margin: 0;
+}
+.suggestion-bar__middle {
+  flex: 1;
+  margin-left: 10px;
+}
+.suggestion-bar__left {
+  width: fit-content
+}
+.suggestion-bar_username {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+}
+.suggestion-bar_name {
+  color: gray;
+}
+.suggestion-bar_username:active {
+  color: gray;
+}
+.suggestion-bar__right {
+  margin-right: 35px;
+  width: fit-content;
+}
+.suggestion-bar__button {
+  margin-right: 15px;
+  color: rgb(133,161,255);
+  cursor: pointer;
+}
+.suggestion-bar__button:hover {
+  color: rgb(149, 165, 213);
+  text-decoration: underline;
+}
+.suggestion-bar__button:active {
+  color: rgb(188, 197, 224);
+}
+.suggestion-bar__suggested {
+  color: rgb(168,168,168);
+  font-weight: 500;
+}
+.suggestion-bar__card--marginTop {
+  margin-top: 25px;
+}
+.suggestion-bar__button--whiteColor {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.suggestion-bar--activeGrayColor:hover {
+  text-decoration: none;
+  color: gray;
+}
+.main-suggestion-bar {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-suggestion-bar {
+  color: gray;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width:270px
+}
+.footer-suggestion-bar__nav {
+  font-size: 12px;
+  font-size: 10px;
+}
+.footer-suggestion-bar__nav a {
+  text-decoration: none;
+  color: rgb(96, 94, 94);
+}
+.footer-suggestion-bar__link {
+  font-size: 13px;
+}
+.footer-suggestion-bar__link:hover {
+  text-decoration: underline;
+}
+.footer-suggestion-bar__link:active {
+  text-decoration: underline;
+  color: rgb(59, 57, 57);
+}
+.footer-suggestion-nav__copyright {
+  margin-top: 10px;
+  color: rgb(96, 94, 94);
+  font-size: 13px;
+}

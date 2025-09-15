@@ -1,22 +1,10 @@
 
-.sidebar-section {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width:245px;
-  gap:10px;
-  border-right: 0.25px solid rgb(52, 51, 51);
-  background-color: black;
-}
-.sidebar-link img {
+.sidebar__link img {
   object-fit: contain;
   margin-left: 10px;
   width:30px;
 }
-.sidebar-link {
+.sidebar__link {
   color: white;
   font-size: 16px;
   display: flex;
@@ -27,20 +15,20 @@
   border-radius: 6px;
   width: 90%;
   padding-left: 14px;
-  margin-left: 7px;
+  margin-left: 0px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.sidebar-link:hover {
+.sidebar__link:hover {
   background-color: rgb(58, 58, 58)
 }
-.sidebar-link:active {
+.sidebar__link:active {
   transform: scale(0.95); /* Nút nhỏ lại một chút */
 }
-.instagram-logo-container {
+.sidebar__instagramLogo {
   height:97px;
 }
-.instagram-logo {
+.instagram-logo--smallSize {
   width:110px;
   margin-top: 27px;
   margin-left: 20px;
@@ -48,6 +36,12 @@
 .user-current-picture {
   border-radius: 50%;
 }
-.last-section {
+.side-bar-footer {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
   margin-top: 60px;
+}
+.home-link__fontWeight {
+  font-weight: bolder;
 }

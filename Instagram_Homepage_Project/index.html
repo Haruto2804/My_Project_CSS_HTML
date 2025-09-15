@@ -7,91 +7,93 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/stories-bar.css">
   <link rel="stylesheet" href="styles/post.css">
+  <link rel="stylesheet" href="styles/right-section.css">
+  <link rel="stylesheet" href="styles/messages-pos-fixed.css">
 </head>
 <body>
   <main class = "main-project">
-          <nav class = "sidebar-section">
-            <div class = "instagram-logo-container">
-              <img class = "Instagram-logo" src="icons-sidebar/Instagram-logo.png" alt="">
+          <nav class = "sidebar">
+            <div class = "sidebar__instagramLogo">
+              <img class = "instagram-logo--smallSize" src="icons-sidebar/Instagram-logo.png" alt="">
             </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link home-link__fontWeight">
                 <img src="icons-sidebar/home_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Home</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link">
                 <img src="icons-sidebar/search_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Search</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link">
                 <img src="icons-sidebar/explore_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Explore</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link">
                 <img src="icons-sidebar/animated_images_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Reels</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link">
                 <img src="icons-sidebar/chat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Messages</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link">
                 <img src="icons-sidebar/notifications_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Notifications</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link">
                 <img src="icons-sidebar/add_2_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Create</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link">
                 <img  class = "user-current-picture"src="profile-picture/haruto_picture.jpg" alt="">
                 <p>Profile</p>
               </div>
-            <div class = "last-section">
-              <div class = "sidebar-link">
+            <div class = "side-bar-footer">
+              <div class = "sidebar__link">
                 <img src="/icons-sidebar/menu_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>More</p>
               </div>
-              <div class = "sidebar-link">
+              <div class = "sidebar__link ">
                 <img src="/icons-sidebar/more_up_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Also from Meta</p>
               </div>
             </div>
           </nav>
 
-          <div class = "middle-section">
+          <div class = "main-feed">
             <div class = "stories-bar">
-              <div class = "stories-bar-user-container">
+              <div class = "stories-bar__user">
                 <img src="stories-bar-picture/haruto.jpg" alt="">
-                <p class = "username">baodaydunglo</p>
+                <p class = "stories-bar__username">baodaydunglo</p>
               </div>
-              <div class = "stories-bar-user-container">
+              <div class = "stories-bar__user">
                 <img src="stories-bar-picture/chút bó_Yellow Hair.jpg" alt="">
-                <p class = "username">dauvangkhe</p>
+                <p class = "stories-bar__username">dauvangkhe</p>
               </div>
-              <div class = "stories-bar-user-container">
+              <div class = "stories-bar__user">
                 <img src="stories-bar-picture/Cu_Khang_Soilder.jpg" alt="">
-                <p class = "username">khangchoigioi</p>
+                <p class = "stories-bar__username">khangchoigioi</p>
               </div>
-              <div class = "stories-bar-user-container">
+              <div class = "stories-bar__user">
                 <img src="stories-bar-picture/anbuidoi.jpg" alt="">
-                <p class = "username">anbuidoi</p>
+                <p class = "stories-bar__username">anbuidoi</p>
               </div>
-              <div class = "stories-bar-user-container">
+              <div class = "stories-bar__user">
                 <img src="stories-bar-picture/Khiêm_Ba_Đê.jpg" alt="">
-                <p class = "username">khiem3D</p>
+                <p class = "stories-bar__username">khiem3D</p>
               </div>
-              <div class = "stories-bar-user-container">
-                <img src="stories-bar-picture/Hoàng.jpg" alt="">
-                <p class = "username">hoangcoghe</p>
+              <div class = "stories-bar__user">
+                <img src="stories-bar-picture/HoangBuiDoi.jpg" alt="">
+                <p class = "stories-bar__username">hoangcoghe</p>
               </div>
               
             </div>
             <div class = "post">
-              <div class = "post-user-details-container">
-                <div class = "post-user-details-left">
-                      <img class = "post-user-picture" src="stories-bar-picture/haruto.jpg" alt="">   
-                      <div class = "post-username">baodaydunglo</div>
-                      <div class = "post-time">1h</div>
+              <div class = "post__header">
+                <div class = "post__user">
+                      <img class = "post__user--picture" src="stories-bar-picture/haruto.jpg" alt="">   
+                      <div class = "post__user--name">baodaydunglo</div>
+                      <div class = "post__user--time">1h</div>
                 </div>
                 
                 <div class = "post-user-details-right">
@@ -99,59 +101,53 @@
                   <img src="icons-post/more_horiz_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="">
                 </div>
               </div>
-              <div class = "post-picture-container">
-                <img class = "post-picture"src="thumbnail/thumbnail-14.png" alt="">
-              </div>
-              <div class = "post-button-bar">
-                <div  class = "left-post-button-bar">
+              <div class = "main-post">
+                <img class = "main-post__picture"src="thumbnail/thumbnail-14.png" alt="">
+                <div class = "main-post__interactionBar">
+                <div  class = "main-post__interactionBar_left">
                   <img src="icons-post/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/mode_comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/send_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class = "right-post-button-bar">
+                <div class = "main-post__interactionBar_right">
                   <img src="icons-post/bookmark_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-              <div class = "like-container">
-                <p class = "like">666K likes</p>
+              <div class = "main-post__like">
+                <p>666K likes</p>
               </div>
-              <div class = "caption-container">
-                <div class = "caption-flexbox">
+              <div class = "main-post__content">
+                <div class = "content__caption">
                   <div>baodaydunglo</div>
                   <div>CÁCH ĐỂ TRỞ THÀNH LÍNH CỤ HỒ!!!</div>
                 </div>
-                <div class = "hashtag-container">
-                  <p class ="hashtag">#cachlamlinhcuho</p>
-                  <p class ="hashtag">#VietNamMuonNam</p>  
-                  <p class ="hashtag">#HoChuTichMuonNam</p>
-
+                <div class = "content__hashtag">
+                  <p class ="hashtag--blue">#cachlamlinhcuho</p>
+                  <p class ="hashtag--blue">#VietNamMuonNam</p>  
+                  <p class ="hashtag--blue">#HoChuTichMuonNam</p>
                 </div>
               </div>
-              <div class = "translation-container">
-                <p>See translation</p>
+              <div class = "main-post__translation">
+                <p class = "translation__button">See translation</p>
               </div>
-              <div class = "view-comments-container">
+              <div class = "main-post__viewComment">
                 <p class = "view-comments">View all 573 comments</p>
               </div>
-              <div class = "add-comment-container">
-                <div class = "add-comment-input-container">
+              <div class = "main-post__footer">
+                <div class = "footer__input">
                   <input class ="add-comment-input" type="text" placeholder="Add a comment">
-                </div>
-                <div>
-                  <p class ="post-button">Post</p>
-                </div>
-                <div>
+                  <p class ="post-button">Post</p>  
                   <img class = "smile-face-icon"src="icons-post/sentiment_satisfied_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-            
+            </div>
             </div>
             <div class = "post">
-              <div class = "post-user-details-container">
-                <div class = "post-user-details-left">
-                      <img class = "post-user-picture" src="stories-bar-picture/haruto.jpg" alt="">   
-                      <div class = "post-username">baodaydunglo</div>
-                      <div class = "post-time">1h</div>
+              <div class = "post__header">
+                <div class = "post__user">
+                      <img class = "post__user--picture" src="stories-bar-picture/haruto.jpg" alt="">   
+                      <div class = "post__user--name">baodaydunglo</div>
+                      <div class = "post__user--time">1h</div>
                 </div>
                 
                 <div class = "post-user-details-right">
@@ -159,59 +155,53 @@
                   <img src="icons-post/more_horiz_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="">
                 </div>
               </div>
-              <div class = "post-picture-container">
-                <img class = "post-picture"src="thumbnail/thumbnail-14.png" alt="">
-              </div>
-              <div class = "post-button-bar">
-                <div  class = "left-post-button-bar">
+              <div class = "main-post">
+                <img class = "main-post__picture"src="thumbnail/thumbnail-14.png" alt="">
+                <div class = "main-post__interactionBar">
+                <div  class = "main-post__interactionBar_left">
                   <img src="icons-post/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/mode_comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/send_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class = "right-post-button-bar">
+                <div class = "main-post__interactionBar_right">
                   <img src="icons-post/bookmark_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-              <div class = "like-container">
-                <p class = "like">666K likes</p>
+              <div class = "main-post__like">
+                <p>666K likes</p>
               </div>
-              <div class = "caption-container">
-                <div class = "caption-flexbox">
+              <div class = "main-post__content">
+                <div class = "content__caption">
                   <div>baodaydunglo</div>
                   <div>CÁCH ĐỂ TRỞ THÀNH LÍNH CỤ HỒ!!!</div>
                 </div>
-                <div class = "hashtag-container">
-                  <p class ="hashtag">#cachlamlinhcuho</p>
-                  <p class ="hashtag">#VietNamMuonNam</p>  
-                  <p class ="hashtag">#HoChuTichMuonNam</p>
-
+                <div class = "content__hashtag">
+                  <p class ="hashtag--blue">#cachlamlinhcuho</p>
+                  <p class ="hashtag--blue">#VietNamMuonNam</p>  
+                  <p class ="hashtag--blue">#HoChuTichMuonNam</p>
                 </div>
               </div>
-              <div class = "translation-container">
-                <p>See translation</p>
+              <div class = "main-post__translation">
+                <p class = "translation__button">See translation</p>
               </div>
-              <div class = "view-comments-container">
+              <div class = "main-post__viewComment">
                 <p class = "view-comments">View all 573 comments</p>
               </div>
-              <div class = "add-comment-container">
-                <div class = "add-comment-input-container">
+              <div class = "main-post__footer">
+                <div class = "footer__input">
                   <input class ="add-comment-input" type="text" placeholder="Add a comment">
-                </div>
-                <div>
-                  <p class ="post-button">Post</p>
-                </div>
-                <div>
+                  <p class ="post-button">Post</p>  
                   <img class = "smile-face-icon"src="icons-post/sentiment_satisfied_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-            
+            </div>
             </div>
             <div class = "post">
-              <div class = "post-user-details-container">
-                <div class = "post-user-details-left">
-                      <img class = "post-user-picture" src="stories-bar-picture/haruto.jpg" alt="">   
-                      <div class = "post-username">baodaydunglo</div>
-                      <div class = "post-time">1h</div>
+              <div class = "post__header">
+                <div class = "post__user">
+                      <img class = "post__user--picture" src="stories-bar-picture/haruto.jpg" alt="">   
+                      <div class = "post__user--name">baodaydunglo</div>
+                      <div class = "post__user--time">1h</div>
                 </div>
                 
                 <div class = "post-user-details-right">
@@ -219,59 +209,53 @@
                   <img src="icons-post/more_horiz_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="">
                 </div>
               </div>
-              <div class = "post-picture-container">
-                <img class = "post-picture"src="thumbnail/thumbnail-14.png" alt="">
-              </div>
-              <div class = "post-button-bar">
-                <div  class = "left-post-button-bar">
+              <div class = "main-post">
+                <img class = "main-post__picture"src="thumbnail/thumbnail-14.png" alt="">
+                <div class = "main-post__interactionBar">
+                <div  class = "main-post__interactionBar_left">
                   <img src="icons-post/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/mode_comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/send_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class = "right-post-button-bar">
+                <div class = "main-post__interactionBar_right">
                   <img src="icons-post/bookmark_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-              <div class = "like-container">
-                <p class = "like">666K likes</p>
+              <div class = "main-post__like">
+                <p>666K likes</p>
               </div>
-              <div class = "caption-container">
-                <div class = "caption-flexbox">
+              <div class = "main-post__content">
+                <div class = "content__caption">
                   <div>baodaydunglo</div>
                   <div>CÁCH ĐỂ TRỞ THÀNH LÍNH CỤ HỒ!!!</div>
                 </div>
-                <div class = "hashtag-container">
-                  <p class ="hashtag">#cachlamlinhcuho</p>
-                  <p class ="hashtag">#VietNamMuonNam</p>  
-                  <p class ="hashtag">#HoChuTichMuonNam</p>
-
+                <div class = "content__hashtag">
+                  <p class ="hashtag--blue">#cachlamlinhcuho</p>
+                  <p class ="hashtag--blue">#VietNamMuonNam</p>  
+                  <p class ="hashtag--blue">#HoChuTichMuonNam</p>
                 </div>
               </div>
-              <div class = "translation-container">
-                <p>See translation</p>
+              <div class = "main-post__translation">
+                <p class = "translation__button">See translation</p>
               </div>
-              <div class = "view-comments-container">
+              <div class = "main-post__viewComment">
                 <p class = "view-comments">View all 573 comments</p>
               </div>
-              <div class = "add-comment-container">
-                <div class = "add-comment-input-container">
+              <div class = "main-post__footer">
+                <div class = "footer__input">
                   <input class ="add-comment-input" type="text" placeholder="Add a comment">
-                </div>
-                <div>
-                  <p class ="post-button">Post</p>
-                </div>
-                <div>
+                  <p class ="post-button">Post</p>  
                   <img class = "smile-face-icon"src="icons-post/sentiment_satisfied_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-            
+            </div>
             </div>
             <div class = "post">
-              <div class = "post-user-details-container">
-                <div class = "post-user-details-left">
-                      <img class = "post-user-picture" src="stories-bar-picture/haruto.jpg" alt="">   
-                      <div class = "post-username">baodaydunglo</div>
-                      <div class = "post-time">1h</div>
+              <div class = "post__header">
+                <div class = "post__user">
+                      <img class = "post__user--picture" src="stories-bar-picture/haruto.jpg" alt="">   
+                      <div class = "post__user--name">baodaydunglo</div>
+                      <div class = "post__user--time">1h</div>
                 </div>
                 
                 <div class = "post-user-details-right">
@@ -279,59 +263,297 @@
                   <img src="icons-post/more_horiz_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="">
                 </div>
               </div>
-              <div class = "post-picture-container">
-                <img class = "post-picture"src="thumbnail/thumbnail-14.png" alt="">
-              </div>
-              <div class = "post-button-bar">
-                <div  class = "left-post-button-bar">
+              <div class = "main-post">
+                <img class = "main-post__picture"src="thumbnail/thumbnail-14.png" alt="">
+                <div class = "main-post__interactionBar">
+                <div  class = "main-post__interactionBar_left">
                   <img src="icons-post/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/mode_comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                   <img src="icons-post/send_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class = "right-post-button-bar">
+                <div class = "main-post__interactionBar_right">
                   <img src="icons-post/bookmark_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-              <div class = "like-container">
-                <p class = "like">666K likes</p>
+              <div class = "main-post__like">
+                <p>666K likes</p>
               </div>
-              <div class = "caption-container">
-                <div class = "caption-flexbox">
+              <div class = "main-post__content">
+                <div class = "content__caption">
                   <div>baodaydunglo</div>
                   <div>CÁCH ĐỂ TRỞ THÀNH LÍNH CỤ HỒ!!!</div>
                 </div>
-                <div class = "hashtag-container">
-                  <p class ="hashtag">#cachlamlinhcuho</p>
-                  <p class ="hashtag">#VietNamMuonNam</p>  
-                  <p class ="hashtag">#HoChuTichMuonNam</p>
-
+                <div class = "content__hashtag">
+                  <p class ="hashtag--blue">#cachlamlinhcuho</p>
+                  <p class ="hashtag--blue">#VietNamMuonNam</p>  
+                  <p class ="hashtag--blue">#HoChuTichMuonNam</p>
                 </div>
               </div>
-              <div class = "translation-container">
-                <p>See translation</p>
+              <div class = "main-post__translation">
+                <p class = "translation__button">See translation</p>
               </div>
-              <div class = "view-comments-container">
+              <div class = "main-post__viewComment">
                 <p class = "view-comments">View all 573 comments</p>
               </div>
-              <div class = "add-comment-container">
-                <div class = "add-comment-input-container">
+              <div class = "main-post__footer">
+                <div class = "footer__input">
                   <input class ="add-comment-input" type="text" placeholder="Add a comment">
-                </div>
-                <div>
-                  <p class ="post-button">Post</p>
-                </div>
-                <div>
+                  <p class ="post-button">Post</p>  
                   <img class = "smile-face-icon"src="icons-post/sentiment_satisfied_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
               </div>
-            
+            </div>
+            </div>
+            <div class = "post">
+              <div class = "post__header">
+                <div class = "post__user">
+                      <img class = "post__user--picture" src="stories-bar-picture/haruto.jpg" alt="">   
+                      <div class = "post__user--name">baodaydunglo</div>
+                      <div class = "post__user--time">1h</div>
+                </div>
+                
+                <div class = "post-user-details-right">
+                  <img src="icons-post/star_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                  <img src="icons-post/more_horiz_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+              </div>
+              <div class = "main-post">
+                <img class = "main-post__picture"src="thumbnail/thumbnail-14.png" alt="">
+                <div class = "main-post__interactionBar">
+                <div  class = "main-post__interactionBar_left">
+                  <img src="icons-post/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                  <img src="icons-post/mode_comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                  <img src="icons-post/send_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div class = "main-post__interactionBar_right">
+                  <img src="icons-post/bookmark_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+              </div>
+              <div class = "main-post__like">
+                <p>666K likes</p>
+              </div>
+              <div class = "main-post__content">
+                <div class = "content__caption">
+                  <div>baodaydunglo</div>
+                  <div>CÁCH ĐỂ TRỞ THÀNH LÍNH CỤ HỒ!!!</div>
+                </div>
+                <div class = "content__hashtag">
+                  <p class ="hashtag--blue">#cachlamlinhcuho</p>
+                  <p class ="hashtag--blue">#VietNamMuonNam</p>  
+                  <p class ="hashtag--blue">#HoChuTichMuonNam</p>
+                </div>
+              </div>
+              <div class = "main-post__translation">
+                <p class = "translation__button">See translation</p>
+              </div>
+              <div class = "main-post__viewComment">
+                <p class = "view-comments">View all 573 comments</p>
+              </div>
+              <div class = "main-post__footer">
+                <div class = "footer__input">
+                  <input class ="add-comment-input" type="text" placeholder="Add a comment">
+                  <p class ="post-button">Post</p>  
+                  <img class = "smile-face-icon"src="icons-post/sentiment_satisfied_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class = "post">
+              <div class = "post__header">
+                <div class = "post__user">
+                      <img class = "post__user--picture" src="stories-bar-picture/haruto.jpg" alt="">   
+                      <div class = "post__user--name">baodaydunglo</div>
+                      <div class = "post__user--time">1h</div>
+                </div>
+                
+                <div class = "post-user-details-right">
+                  <img src="icons-post/star_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                  <img src="icons-post/more_horiz_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+              </div>
+              <div class = "main-post">
+                <img class = "main-post__picture"src="thumbnail/thumbnail-14.png" alt="">
+                <div class = "main-post__interactionBar">
+                <div  class = "main-post__interactionBar_left">
+                  <img src="icons-post/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                  <img src="icons-post/mode_comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                  <img src="icons-post/send_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div class = "main-post__interactionBar_right">
+                  <img src="icons-post/bookmark_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+              </div>
+              <div class = "main-post__like">
+                <p>666K likes</p>
+              </div>
+              <div class = "main-post__content">
+                <div class = "content__caption">
+                  <div>baodaydunglo</div>
+                  <div>CÁCH ĐỂ TRỞ THÀNH LÍNH CỤ HỒ!!!</div>
+                </div>
+                <div class = "content__hashtag">
+                  <p class ="hashtag--blue">#cachlamlinhcuho</p>
+                  <p class ="hashtag--blue">#VietNamMuonNam</p>  
+                  <p class ="hashtag--blue">#HoChuTichMuonNam</p>
+                </div>
+              </div>
+              <div class = "main-post__translation">
+                <p class = "translation__button">See translation</p>
+              </div>
+              <div class = "main-post__viewComment">
+                <p class = "view-comments">View all 573 comments</p>
+              </div>
+              <div class = "main-post__footer">
+                <div class = "footer__input">
+                  <input class ="add-comment-input" type="text" placeholder="Add a comment">
+                  <p class ="post-button">Post</p>  
+                  <img class = "smile-face-icon"src="icons-post/sentiment_satisfied_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+              </div>
+            </div>
             </div>
           </div>
 
-          <div class = "right-section"></div>
-
+          <div class = "suggestion-bar">
+            <div class = "suggestion-bar__card">
+              <div class = "suggestion-bar__left">
+                <a href="https://www.instagram.com/baodaydunglo/">
+                    <img class = "suggestion-bar__picture" src="profile-picture/haruto_picture.jpg" alt="">
+                </a>
+              
+                </div>
+                <div class = "suggestion-bar__middle">
+                    <a href= "https://www.instagram.com/baodaydunglo/" class = "suggestion-bar_username">baodaydunglo</a>
+                    <p class = "suggestion-bar_name">Haruto</p>
+                </div>
+                <div class = "suggestion-bar__right">
+                  <p class = "suggestion-bar__button">Switch</p>
+                </div>
+            </div>
+            <div class = "suggestion-bar__card
+                          suggestion-bar__card--marginTop">
+              <div class = "suggestion-bar__left">
+                <p class = "suggestion-bar__suggested
+                ">Suggested for you</p>
+                </div>
+                <div class = "suggestion-bar__right">
+                  <p class = "suggestion-bar__button
+                              suggestion-bar__button--whiteColor 
+                              suggestion-bar--activeGrayColor">
+                            See all</p>
+                </div>
+            </div>
+            <div class = "main-suggestion-bar">
+              <div class = "suggestion-bar__card ">
+              <div class = "suggestion-bar__left">
+                <a href="https://www.instagram.com/instagram/">
+                  <img class = "suggestion-bar__picture" src="/suggested-picture/instagramjpg.jpg" alt="">
+                </a>
+                </div>
+                <div class = "suggestion-bar__middle">
+                    <a href = "https://www.instagram.com/instagram/" class = "suggestion-bar_username">instagram</a>
+                    <p class = "suggestion-bar_name">Followed by Haruto</p>
+                </div>
+                <div class = "suggestion-bar__right">
+                  <p class = "suggestion-bar__button">Follow</p>
+                </div>
+            </div>
+            <div class = "suggestion-bar__card">
+              <div class = "suggestion-bar__left">
+                <a href="https://www.instagram.com/meta/">
+                  <img class = "suggestion-bar__picture" src="/suggested-picture/meta.jpg" alt="">
+                </a>
+                
+                </div>
+                <div class = "suggestion-bar__middle">
+                    <a href = "https://www.instagram.com/meta/" class = "suggestion-bar_username">meta</a>
+                    <p class = "suggestion-bar_name">Followed by Makima</p>
+                </div>
+                <div class = "suggestion-bar__right">
+                  <p class = "suggestion-bar__button">Follow</p>
+                </div>
+            </div>
+            <div class = "suggestion-bar__card">
+              <div class = "suggestion-bar__left">
+                <a href="https://www.instagram.com/eimi0318/">
+                  <img class = "suggestion-bar__picture" src="/suggested-picture/eimi0318.jpg" alt="">
+                </a>
+                
+                </div>
+                <div class = "suggestion-bar__middle">
+                    <a href="https://www.instagram.com/eimi0318/" class = "suggestion-bar_username">eimi0318</a>
+                    <p class = "suggestion-bar_name">Followed by Haruto</p>
+                </div>
+                <div class = "suggestion-bar__right">
+                  <p class = "suggestion-bar__button">Follow</p>
+                </div>
+            </div>
+            <div class = "suggestion-bar__card">
+              <div class = "suggestion-bar__left">
+                <a href="https://www.instagram.com/threads/">
+                    <img class = "suggestion-bar__picture" src="/suggested-picture/threads.jpg" alt="">
+                </a>
+              
+                </div>
+                <div class = "suggestion-bar__middle">
+                    <a href="https://www.instagram.com/threads/" class = "suggestion-bar_username">threads</a>
+                    <p class = "suggestion-bar_name">Followed by instagram</p>
+                </div>
+                <div class = "suggestion-bar__right">
+                  <p class = "suggestion-bar__button">Follow</p>
+                </div>
+            </div>
+            <div class = "suggestion-bar__card">
+              <div class = "suggestion-bar__left">
+                <a href="https://www.instagram.com/youtube/">
+                    <img class = "suggestion-bar__picture" src="/suggested-picture/youtube.jpg" alt="">
+                </a>
+                </div>
+                <div class = "suggestion-bar__middle">
+                    <a href="https://www.instagram.com/youtube/" class = "suggestion-bar_username">youtube</a>
+                    <p class = "suggestion-bar_name">Followed by Haruno</p>
+                </div>
+                <div class = "suggestion-bar__right">
+                  <p class = "suggestion-bar__button">Switch</p>
+                </div>
+            </div>
+            </div>
+            <div class = "footer-suggestion-bar">
+              <nav class = "footer-suggestion-bar__nav">
+                <a target = "_blank" class = "footer-suggestion-bar__link"href="https://l.instagram.com/?u=https%3A%2F%2Fabout.instagram.com%2F&e=AT0zEVpuBoO9YCIenC_SR9ob-ozY5HwPzXxNxO0QKULCEIngPR__8Cxj_RWzNLOTMTPbJgHPIKHoVTId-nk9SMurvHtSb1NPh5C44eJKb-_Xd0xUYSx_ysn1Mw&s=1">About</a> &middot;
+                <a target = "_blank" class = "footer-suggestion-bar__link"href="https://help.instagram.com/">Help</a> &middot;
+                <a target = "_blank" class = "footer-suggestion-bar__link" href="https://l.instagram.com/?u=https%3A%2F%2Fabout.instagram.com%2Fblog%2F&e=AT1p0ko9WomHPs5T6cD1XxOWzDwz12ZQTWmY3JVjNQxchYzDoakRdwBFvumVYvWEP5hL_OrROM1szDkVPxC56MZSzYQrKgAuJYikEbKdvlVHw3z5KtToeTRGrA&s=1">Press</a> &middot;
+                <a target = "_blank" class = "footer-suggestion-bar__link"href="https://developers.facebook.com/docs/instagram-platform">API</a> &middot;
+                <a target = "_blank" class = "footer-suggestion-bar__link"href="https://l.instagram.com/?u=https%3A%2F%2Fabout.instagram.com%2Fabout-us%2Fcareers&e=AT1_xSu7IA1-XtxPOwFGXFV28PyN_sJMuGRH4yXHUjlUaBr8h-5PY6_pby02LpxG9zjTofJ9jsJ8ZROgJF3OKp4PPWz4Gmlxz6kbaDGxGm7Z0CJ8L7ndduCHGw&s=1">Jobs</a> &middot;
+                <a target = "_blank"class = "footer-suggestion-bar__link"href="https://www.instagram.com/legal/privacy/">Privacy</a> &middot;
+                <a target = "_blank" class = "footer-suggestion-bar__link"href="https://www.instagram.com/legal/terms/">Terms</a> &middot;
+                <a target = "_blank" class = "footer-suggestion-bar__link"href="https://www.instagram.com/explore/locations/">Locations</a> &middot;
+                <a target = "_blank" class = "footer-suggestion-bar__link"href="https://www.instagram.com/language/preferences/">Languages</a> &middot;
+                <a target = "_blank"class = "footer-suggestion-bar__link"href="https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer">Meta Verified</a>
+              </nav>
+              <div class = "footer-suggestion-nav__copyright">
+                © 2025 INSTAGRAM FAKE FROM HARUTO
+              </div>
+            </div>
+          </div>
+          <div class = "messages-pos-fixed">
+            <div class = "messages-pos-fixed__left">
+              <img src="icons-sidebar/chat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                      <p>Messages </p>
+            </div>
+          
+            <div class = "messages-pos-fixed__right">
+              <img class = "suggestion-bar__picture
+              sugesstion-bar__picture--smallSize
+              "src="suggested-picture/eimi0318.jpg" alt="">
+              <img class = "suggestion-bar__picture
+              sugesstion-bar__picture--smallSize
+              "src="suggested-picture/minami.jpg" alt="">
+              <img class = "suggestion-bar__picture
+              sugesstion-bar__picture--smallSize
+              "src="suggested-picture/karenkaede.png" alt="">
+            </div>
+          </div>
   </main>
-  
-
 </body>
 </html>
