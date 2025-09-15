@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/post.css">
   <link rel="stylesheet" href="styles/right-section.css">
   <link rel="stylesheet" href="styles/messages-pos-fixed.css">
+  <link rel="stylesheet" href="styles/miniPopUpMessages.css">
 </head>
 <body>
   <main class = "main-project">
@@ -536,12 +537,11 @@
               </div>
             </div>
           </div>
-          <div class = "messages-pos-fixed">
+          <div id = "messagesPopUpBtn" class = "messages-pos-fixed">
             <div class = "messages-pos-fixed__left">
               <img src="icons-sidebar/chat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                       <p>Messages</p>
             </div>
-          
             <div class = "messages-pos-fixed__right">
               <img class = "suggestion-bar__picture
               sugesstion-bar__picture--smallSize
@@ -555,5 +555,87 @@
             </div>
           </div>
   </main>
+  <div id = "miniPopUp-Messages" class = "miniPopUp-Messages">
+    <div class = "miniPopUp-Messages-header">
+      <div CLASS = "miniPopUp-Messages-header__messages">Messages</div>
+      <div>
+        <img src="./miniPopUpMessages/pan_zoom_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <button class = "miniPopUp-Messages-header-CloseBtn"id = "miniPopUp-Messages-header-CloseBtn">
+            <img src="./miniPopUpMessages/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </button>
+      </div>
+    </div>
+    <div class = "miniPopUp-Messages-main">
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/eimi0318.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">eimi0318
+            <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+          </p>
+          <p class = "miniPopUp-Messages-main__text">Are you home?...  &middot; 1w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/sontungmtp.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">sontungmtp
+            <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </p>
+          <p class = "miniPopUp-Messages-main__text">Đừng làm trái tim anh đau...  &middot; 52w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/minami.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">minami1406
+              <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </p>
+          <p class = "miniPopUp-Messages-main__text">Hey, how do you feel...  &middot; 8w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/billgates.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">thisisbillgates
+            <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </p>
+          <p class = "miniPopUp-Messages-main__text">
+            I will let you become the Director...  &middot; 12w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/cristiano.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">cristiano
+              <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </p>
+          <p class = "miniPopUp-Messages-main__text">send me your bank account...  &middot; 87w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/davidbeckham.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">davidbeckham
+              <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </p>
+          <p class = "miniPopUp-Messages-main__text">wanna go to my home?...  &middot; 44w</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src = "./scripts/popup-messages.js"></script>
 </body>
 </html>

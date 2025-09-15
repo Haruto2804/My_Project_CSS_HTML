@@ -27,6 +27,10 @@
 }
 .sidebar__instagramLogo {
   height:97px;
+  cursor: pointer;
+}
+.sidebar__instagramLogo:active {
+  opacity: 0.6;
 }
 .instagram-logo--smallSize {
   width:110px;

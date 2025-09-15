@@ -33,4 +33,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+}
+.stories-bar__user:active {
+  transform: scale(0.95);
 }

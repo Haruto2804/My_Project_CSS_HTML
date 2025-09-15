@@ -85,7 +85,8 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width:270px
+  width:270px;
+  margin-top: 40px;
 }
 .footer-suggestion-bar__nav {
   font-size: 12px;
@@ -106,7 +107,7 @@
   color: rgb(59, 57, 57);
 }
 .footer-suggestion-nav__copyright {
-  margin-top: 10px;
+  margin-top: 5px;
   color: rgb(96, 94, 94);
   font-size: 13px;
 }
