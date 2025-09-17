@@ -8,12 +8,20 @@
   bottom: 20px;
   right: 20px;
   border-radius: 10px;
-  display: none;
-
+  /* tạo hiệu ứng mượt khi mở popUp */
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.miniPopUp-Messages.show-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }
 .miniPopUp-Messages-header {
-  width:360;
-  height: 53px;
+  width:360px;
+  height: 60px;
   font-weight: 600;
   display: flex;
   flex-direction: row;
@@ -31,6 +39,21 @@
   width:25px;
   margin-right: 10px;
 }
+.miniPopUp-Messages-main {
+  overflow-y: auto;
+  max-height: calc(100% - 60px);
+}
+/* CUSTOMIZE SCROLLBAR IN POP UP MESSAGES */
+.miniPopUp-Messages-main::-webkit-scrollbar {
+  background-color: rgb(62, 59, 59);
+  width:12px;
+  padding: 100px;
+}
+.miniPopUp-Messages-main::-webkit-scrollbar-thumb {
+  background-color: rgb(144, 138, 138);
+  border-radius: 50vh;
+}
+/* CUSTOMIZE SCROLLBAR IN POP UP MESSAGES */
 .miniPopUp-Messages-main__user {
   display: flex;
   flex-direction: row;
@@ -48,6 +71,7 @@
   width:55px;
   height:55px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .miniPopUp-Messages-main__preview p {
   margin: 0;
@@ -68,13 +92,13 @@
   height: 15px;
   margin-bottom: -2px;
 }
-.miniPopUp-Messages-header-CloseBtn {
+.miniPopUp-Messages-header__CloseBtn {
   background-color: transparent;
   border: none;
 }
-.miniPopUp-Messages-header-CloseBtn:hover  {
+.miniPopUp-Messages-header__CloseBtn:hover  {
   opacity: 0.8;
 }
-.miniPopUp-Messages-header-CloseBtn:active  {
+.miniPopUp-Messages-header__CloseBtn:active  {
   opacity: 0.6;
 }

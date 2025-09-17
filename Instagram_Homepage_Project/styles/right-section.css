@@ -15,7 +15,8 @@
 .suggestion-bar__picture {
   width: 45px;
   height: 45px;
-  border-radius: 50%;;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .suggestion-bar p {
   font-size: 14px;

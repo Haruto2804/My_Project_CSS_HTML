@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="styles/right-section.css">
   <link rel="stylesheet" href="styles/messages-pos-fixed.css">
   <link rel="stylesheet" href="styles/miniPopUpMessages.css">
+  <link rel="stylesheet" href="styles/popUpSearch.css">
 </head>
 <body>
   <main class = "main-project">
-          <nav class = "sidebar">
+          <nav id = "sidebar" class = "sidebar">
             <div class = "sidebar__instagramLogo">
-              <img class = "instagram-logo--smallSize" src="icons-sidebar/Instagram-logo.png" alt="">
+              <img id = "sidebar_text_logo_instagram" class = "instagram-logo--smallSize" src="icons-sidebar/Instagram-logo.png" alt="">
             </div>
               <div class = "sidebar__link home-link__fontWeight">
                 <img src="icons-sidebar/home_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Home</p>
               </div>
-              <div class = "sidebar__link">
+              <div id = "popUpSearchBtn" class = "sidebar__link">
                 <img src="icons-sidebar/search_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                <p>Search</p>
+                <p >Search</p>
               </div>
               <div class = "sidebar__link">
                 <img src="icons-sidebar/explore_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -515,7 +516,7 @@
                     <p class = "suggestion-bar_name">Followed by Haruno</p>
                 </div>
                 <div class = "suggestion-bar__right">
-                  <p class = "suggestion-bar__button">Switch</p>
+                  <p class = "suggestion-bar__button">Follow</p>
                 </div>
             </div>
             </div>
@@ -560,7 +561,7 @@
       <div CLASS = "miniPopUp-Messages-header__messages">Messages</div>
       <div>
         <img src="./miniPopUpMessages/pan_zoom_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-        <button class = "miniPopUp-Messages-header-CloseBtn"id = "miniPopUp-Messages-header-CloseBtn">
+        <button class = "miniPopUp-Messages-header__CloseBtn"id = "miniPopUp-Messages-header-CloseBtn">
             <img src="./miniPopUpMessages/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
         </button>
       </div>
@@ -634,8 +635,393 @@
           <p class = "miniPopUp-Messages-main__text">wanna go to my home?...  &middot; 44w</p>
         </div>
       </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/emika_shirakami.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">emika_shirakami
+            <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </p>
+          <p class = "miniPopUp-Messages-main__text">
+            Did you get the email I sent?...  &middot; 35w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/gen.e_0727.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">gen.e_0727
+          </p>
+          <p class = "miniPopUp-Messages-main__text">
+            Let's hang out this weekend...  &middot; 29w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/baraa_arts.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">baraa_arts
+          </p>
+          <p class = "miniPopUp-Messages-main__text">
+            Let me know if you need anything...  &middot; 12w</p>
+        </div>
+      </div>
+      <div class = "miniPopUp-Messages-main__user">
+        <div>
+          <img class = "miniPopUp-Messages-main__picture" src="./suggested-picture/i_am_young22.jpg" alt="">
+        </div>
+        <div class = "miniPopUp-Messages-main__preview">
+          <p class = "miniPopUp-Messages-main__name">i_am_young22
+            <img  class = "miniPopUp-Messages-main__verified" src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </p>
+          <p class = "miniPopUp-Messages-main__text">
+          I'm looking forward to it!....  &middot; 1002w</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id = "popUpSearch" class = "popup-Search">
+    <div class = "popup-Search__header">
+      <p>Search</p> 
+      <input class ="popup-Search__input" type="search" placeholder="Search">
+
+      
+
+    </div>
+    <div class = "popup-Search-main">
+      <div class = "popup-Search-main__currentUser">
+        <p class = "popup-Search-main__recent">Recent</p>
+        <p class = "popup-Search-main__ClrBtn">Clear all</p>
+      </div>
+      <a href ="https://www.instagram.com/eimi0318/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/eimi0318.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">eimi0318</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/baraa_arts/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture" src = "./suggested-picture/baraa_arts.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">baraa_arts</p>
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/i_am_young22/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/i_am_young22.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">i_am_young22</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/emika_shirakami/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture" src = "./suggested-picture/emika_shirakami.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">emika_shirakami</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/kaedekaren0825/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture" src = "./suggested-picture/karenkaede.png" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">kaedekaren0825</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/thisisbillgates/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture" src = "./suggested-picture/billgates.jpg">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">thisisbillgates</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/cristiano/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/cristiano.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">cristiano</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/sontungmtp/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/sontungmtp.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">sontungmtp</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/davidbeckham/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/davidbeckham.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">davidbeckham</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/fall_s2_/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/fall_s2_.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">fall_s2_</p>
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/3.9_m/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/3.9_m.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">3.9_m</p>
+      
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/anmy97_/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/anmy97_.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">anmy97_</p>
+          
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/yexianeko_/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/yexianeko_.webp" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">yexianeko_</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/kawausosuki0513/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/kawausosuki0513.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">kawausosuki0513</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/yuu__kira/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/yuu__kira.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">yuu__kira</p>
+            <img style = "display: inline-block; width: 15px"src="./miniPopUpMessages/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/wi.__.u_/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/wi.__.u_.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">wi.__.u_</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/yuuki_yuukiluv/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/yuuki_yuukiluv.png" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">yuuki_yuukiluv</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/ming_ci_0221/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/ming_ci_0221.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">ming_ci_0221</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/xidekaiy/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/xidekaiy.png" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">xidekaiy</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/ji.zuyi_qiie/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/ji.zuyi_qiie.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">ji.zuyi_qiie</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/yuyu.luvq/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/yuyu.luvq.webp" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">yuyu.luvq</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/iili_u_me_lili/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/iili_u_me_lili.jpg" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">iili_u_me_lili</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+      <a href ="https://www.instagram.com/justinaxiecl07_/" class = "popup-Search-main__currentUser">
+        <img class = "suggestion-bar__picture"src="./suggested-picture/justinaxiecl07_.webp" alt="">
+        <div class = "popup-Search-main__info">
+          <div>
+            
+          </div>
+          <div>
+            <p style = "display: inline-block" class = "popup-Search-main__username">justinaxiecl07_</p>
+        
+          </div>
+          <p >Haruto &middot; Following </p>
+        </div>
+        <img class = "popup-Search-main__CloseBtn"src="./popup-Search-picture/close_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
     </div>
   </div>
   <script src = "./scripts/popup-messages.js"></script>
+  <script src = "./scripts/search-PopUp.js"></script>
 </body>
 </html>

@@ -1,0 +1,118 @@
+.popup-Search {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: black;
+  left: 64px;
+  top:0;
+  bottom: 0;
+  width:410px;
+
+
+  opacity: 0;
+  transform: translateX(-500px);
+  pointer-events: none;
+  transition: transform 1s ease, opacity 1s ease
+}
+.popup-Search.showPopUp {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.popup-Search__header {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding-top: 0;
+  border-bottom: 0.025px solid rgb(43, 43, 43);
+  padding-bottom: 30px;
+}
+.popup-Search__header p {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.popup-Search__input::placeholder {
+  font-size: 16px;
+}
+.popup-Search__input:focus {
+  outline: none;
+}
+.popup-Search__input {
+  font-size: 17px;
+  color: white;
+  height: 40px;
+  display: flex;
+  width: 93%;
+  border-radius: 8px;
+  background-color: rgb(54,54,54);
+  border: none;
+  padding-left: 20px;
+  margin-right: 20px;
+  margin-left: 14px;
+  margin-top: 8px;
+}
+.popup-Search-main {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 10px;
+  
+}
+
+.popup-Search-main__currentUser p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.popup-Search-main__currentUser {
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.1s, background-color 0.s;
+}
+.popup-Search-main__currentUser:hover {
+  background-color: rgb(50, 48, 48);
+}
+.popup-Search-main__currentUser:active {
+  opacity: 0.5;
+}
+.popup-Search-main__currentUser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  text-decoration: none;
+}
+.popup-Search-main__ClrBtn {
+  color: rgb(133, 161, 255);
+  cursor: pointer;
+}
+.popup-Search-main__ClrBtn:hover {
+  color: rgb(151, 173, 242);
+  text-decoration: underline;
+  z-index: 100;
+}
+.popup-Search-main__ClrBtn:active {
+  color: rgb(180, 197, 245);
+  text-decoration: underline;
+}
+.popup-Search-main__info {
+  margin: 0;
+  color: gray;
+  line-height: 0px;
+  margin-left: -110px;
+}
+
+.popup-Search-main__username {
+  color: white;
+  margin-bottom: 0;
+}
+
+.popup-Search-main__CloseBtn {
+  width:25px;
+}
+.popup-Search-main__CloseBtn:hover {
+  opacity: 0.8;
+}
+.popup-Search-main__CloseBtn:active {
+  opacity: 0.6;
+}

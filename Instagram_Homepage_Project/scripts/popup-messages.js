@@ -2,12 +2,9 @@ const messageBtn = document.getElementById('messagesPopUpBtn')
 const myPopUp = document.getElementById('miniPopUp-Messages');
 const myCloseBtn = document.getElementById('miniPopUp-Messages-header-CloseBtn')
 // const myCloseBtn = document.getElementById ('miniPopUp-Messages-header-CloseBtn');
-console.log(messageBtn);
-console.log(myPopUp)
-console.log(myCloseBtn)
 messageBtn.addEventListener('click', () => {
-  myPopUp.style.display = 'flex';
+  myPopUp.classList.add ('show-popup');
 })
 myCloseBtn.addEventListener('click', () => {
-  myPopUp.style.display = 'none';
+    myPopUp.classList.remove ('show-popup');
 })
