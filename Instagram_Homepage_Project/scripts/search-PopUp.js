@@ -5,6 +5,6 @@ const searchBtn = document.getElementById('popUpSearchBtn');
 
 searchBtn.addEventListener ('click', ()=> {
   showPopUpSearch.classList.toggle ('showPopUp');
-  textInstagramLogo.classList.toogle ('sidebar__instagramLogo.hideLogo')
+  
 })
 

@@ -31,6 +31,7 @@
   object-fit: cover;
   object-position: right;
   border-radius: 7px;
+  cursor: pointer;
 }
 .post__user--name {
   color: white;
@@ -156,4 +157,12 @@
   font-weight: 700;
   margin-left: 10px;
   margin-right: 10px;
+}
+.post__video {
+  width: 468px;
+  height:624px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 7px;
+  cursor: pointer;
 }
