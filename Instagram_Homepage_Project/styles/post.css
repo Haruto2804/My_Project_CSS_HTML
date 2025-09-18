@@ -159,8 +159,9 @@
   margin-right: 10px;
 }
 .post__video {
-  width: 468px;
-  height:624px;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 470px;
   object-fit: cover;
   object-position: right;
   border-radius: 7px;
