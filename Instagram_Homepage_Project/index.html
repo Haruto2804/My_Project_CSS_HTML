@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/messages-pos-fixed.css">
   <link rel="stylesheet" href="styles/miniPopUpMessages.css">
   <link rel="stylesheet" href="styles/popUpSearch.css">
+  <link rel="stylesheet" href="styles/notification-popup.css">
 </head>
 <body>
   <main class = "main-project">
@@ -38,9 +39,9 @@
                 <img src="icons-sidebar/chat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 <p>Messages</p>
               </div>
-              <div class = "sidebar__link">
+              <div id = "notificationBtn"class = "sidebar__link">
                 <img src="icons-sidebar/notifications_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                <p>Notifications</p>
+                <p '>Notifications</p>
               </div>
               <div class = "sidebar__link">
                 <img src="icons-sidebar/add_2_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -1080,8 +1081,134 @@
       </a>
     </div>
   </div>
+  <div id = "popUpNotifications" class = "notifications-PopUp">
+    <div class = 'notifications-PopUp__header'>
+      <p class = "notifications">Notifications</p>
+      <p class = "thisweek">This week</p>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/baraa_arts.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        baraa_arts replied to your comment on baraa_arts post: 
+        <span class = "hashtag--blue">@baodaydunglo</span> 
+        Your support truly helps me to keep my passion alive, even on the tough days. 
+        Thank you from the bottom of my heart for everything! Love you 3000 &hearts; <span class = "view-comments">1d</span>
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/i_am_young22.jpg" alt="">
+      <p class = 'this-week-container__replied'> i_am_young22 liked your stories. <span class = "view-comments">1d</span>
+
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/i_am_young22.jpg" alt="">
+      <p class = 'this-week-container__replied'> i_am_young22 liked your stories. <span class = "view-comments">3d</span>
+
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/i_am_young22.jpg" alt="">
+      <p class = 'this-week-container__replied'> i_am_young22 liked your stories. <span class = "view-comments">3h</span>
+
+      </p>
+      </div>  
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/baraa_arts.jpg" alt="">
+      <p class = 'this-week-container__replied'> baraa_arts liked your stories. <span class = "view-comments">1h</span>
+
+      </p>
+      </div>
+        <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/baraa_arts.jpg" alt="">
+      <p class = 'this-week-container__replied'> baraa_arts liked your post. <span class = "view-comments">1h</span>
+
+      </p>
+      </div>
+    </div>
+    <div class = "notifications-PopUp__thisMonth ">
+      <p class = "thisweek">This month</p>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/gen.e_0727.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        gen.e_0727 liked your story. <span class ="view-comments">Sep 11</span>
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/anmy97_.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        anmy97_ liked your story. <span class ="view-comments">Aug 29</span>
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/fall_s2_.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        fall_s2_. liked your story. <span class ="view-comments">Aug 26</span>
+      </p>
+      </div>
+        <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/gen.e_0727.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        gen.e_0727 liked your story. <span class ="view-comments">Aug 18</span>
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/fall_s2_.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        fall_s2_. liked your post. <span class ="view-comments">Aug 17</span>
+      </p>
+      </div>
+          <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/baraa_arts.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        baraa_arts liked your post. <span class ="view-comments">Aug 15</span>
+      </p>
+      </div>
+    </div>
+    <div class = "notifications-PopUp__thisMonth ">
+      <p class = "thisweek">Earier</p>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/gen.e_0727.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        gen.e_0727 liked your story. <span class ="view-comments">July 29</span>
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/anmy97_.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        anmy97_ liked your story. <span class ="view-comments">July 26</span>
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/fall_s2_.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        fall_s2_. liked your story. <span class ="view-comments">July 26</span>
+      </p>
+      </div>
+        <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/gen.e_0727.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        gen.e_0727 liked your story. <span class ="view-comments">July 23</span>
+      </p>
+      </div>
+      <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/fall_s2_.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        fall_s2_. liked your post. <span class ="view-comments">July 22</span>
+      </p>
+      </div>
+          <div class = "this-week-container">
+      <img class = "this-week-container__picture post__user--picture"src="./suggested-picture/baraa_arts.jpg" alt="">
+      <p class = 'this-week-container__replied'>
+        baraa_arts liked your post. <span class ="view-comments">July 22</span>
+      </p>
+      </div>
+    </div>
+    <div></div>
+  </div>
   <script src = "./scripts/popup-messages.js"></script>
   <script src = "./scripts/search-PopUp.js"></script>
   <script src = "./scripts/play-pause-post-video.js"></script>
+  <script src = "./scripts/popup-notifications.js"></script>
+  <script src = "./scripts/prevent-ovewrites-event-in-sidebar.js"></script>
 </body>
 </html>
