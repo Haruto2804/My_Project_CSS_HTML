@@ -1,0 +1,80 @@
+body {
+  background-color: lightgoldenrodyellow;
+  margin-top: 0;
+  font-size: Arial;
+}
+.todo-Grid,.todo-Grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 150px 150px;
+  gap: 50px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.todo-Grid2 {
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 150px;
+  margin-top: 20px;
+  margin-left: 30px;
+  align-items: center;
+}
+.title {
+  margin-top: 0;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: green;
+}
+.nameInput,.dateInput {
+  height:30px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+.addBtn {
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.addBtn:hover {
+  opacity: 0.8;
+}
+.addBtn:active {
+  opacity: 0.6;
+}
+.deleteBtn {
+  background-color: rgb(217, 31, 31);
+  color: white;
+  border: none;
+  height: 50px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  opacity: 0.8;
+}
+.deleteBtn:active {
+  opacity: 0.7;
+}
+.deleteAll {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.deleteAll:hover {
+  opacity: 0.8;
+}
+.deleteAll:active {
+  opacity: 0.7;
+}
