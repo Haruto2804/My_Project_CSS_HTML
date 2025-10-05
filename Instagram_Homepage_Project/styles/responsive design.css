@@ -1,0 +1,144 @@
+/*  MOBILE */
+@media screen and (max-width: 750px) {
+  /* SIDEBAR */
+  .sidebar p {
+    display: none;
+  }
+  .sidebar {
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    height: 7%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+  }
+  .messages-pos-fixed {
+    display: none;
+  }
+  .sidebar__link {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0;
+  }
+  .sidebar__instagramLogo {
+    display: none;
+  }
+  /* MAIN FEED */
+  .main-feed {
+    width:100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .post {
+    width: 90%;
+  }
+  .main-post__picture {
+    width: 100%;
+  }
+  .main-post {
+    width:100%;
+
+  }
+  .stories-bar {
+    width:100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 90%;
+    gap: 10px;
+  }
+  .stories-bar::-webkit-scrollbar {
+  display: none;
+}
+  .stories-bar__user {
+    flex-shrink: 2;
+  }
+  .stories-bar-container::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .suggestion-bar {
+    display: none;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .instagram-logo--smallSize {
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  .header-right {
+    margin-right: 10px;
+    display: flex;
+    gap: 15px
+  }
+  .header-notification-container {
+    position: relative;
+  }
+  .dot-notification {
+    position: absolute;
+    background-color: rgb(236, 14, 14);
+    top: -19px;
+    right: -2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+  }
+  .dot-messages {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    top:-6px;
+    left: 13px;
+    font-weight: 700;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 751px) and (max-width: 1023px) {
+  .suggestion-bar {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .sidebar {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width:15%;
+  gap:10px;
+  border-right: 0.25px solid rgb(52, 51, 51);
+  background-color: red;
+  }
+  .sidebar p {
+    width: 20%;
+    display: none
+  }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width:245px;
+  gap:10px;
+  border-right: 0.25px solid rgb(52, 51, 51);
+  background-color: black;
+  }
+}
+

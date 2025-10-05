@@ -1,11 +1,10 @@
 .stories-bar {
   display: flex;
+  flex: 1;
   flex-direction: row;
-  height:108px;
-  justify-content: center;
+  height:100%;
   padding: 8px 9px;
   gap: 20px;
-  
 }
 .stories-bar img {
   display: flex;

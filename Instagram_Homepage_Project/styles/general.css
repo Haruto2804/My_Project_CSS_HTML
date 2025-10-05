@@ -14,13 +14,8 @@ body {
   justify-content: space-around;
 }
 .sidebar {
-  display: flex;
-  flex-direction: column;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width:245px;
+  display: flex;
   gap:10px;
   border-right: 0.25px solid rgb(52, 51, 51);
   background-color: black;
@@ -31,6 +26,8 @@ body {
   flex: 1;
   margin-left: 245px;
   align-items: center;
-  padding-left: 64px;
   padding-top: 20px;
+}
+.header {
+  display: none;
 }
