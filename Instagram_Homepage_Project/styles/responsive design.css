@@ -1,42 +1,6 @@
 /*  MOBILE AND TABLET*/
 @media screen and (max-width:69.9375em) {
-  .nav__sidebar-mobile img {
-    width: 2.5em;
-  }
-  .nav__sidebar-mobile {
-    
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    background-color: black;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height:60px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 0 50px;
-  }
-  .user-current-picture {
-    width: 45px;
-  }
-  .messages-pos-fixed {
-    display: none;
-  }
-  .sidebar p {
-    display: none;
-  }
-  .sidebar{
-    display: none;
-  }
-  .sidebar img {
-    display: none;
-  }
-  .header {
-    display: block;
-  }
+
 
 }
 
@@ -99,21 +63,88 @@
   .suggestion-bar {
     display: none;
   }
+  .main-post__interactionBar {
+    width: 100%;
+  }
+  .sidebar p {
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+  .sidebar img {
+    display: none;
+  }
+    .nav__sidebar-mobile img {
+    width: 2.5em;
+  }
+  .nav__sidebar-mobile {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height:60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 50px;
+  }
+  .user-current-picture {
+    width: 45px;
+  }
+  .messages-pos-fixed {
+    display: none;
+  }
+  .header__search-bar {
+    display: none !important;
+  }
 }
 
 /* Tablet */
-@media screen and (min-width: 46.25em) and (max-width: 69.9375em) {
+@media screen and (min-width: 46.25em) and (max-width: 65em) {
   .suggestion-bar {
     display: none;
   }
-  .header {
-    display: block;
-  }
+
   .main-feed {
     margin-left: 0;
   }
   .sidebar {
     display: none;
+  }
+  .side-bar p {
+    display: none;
+  }
+  .nav__sidebar-tablet {
+    display: block;
+  }
+  .sidebar__link {
+    padding: 0;
+  }
+  .nav__sidebar-tablet {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 0.25px solid rgb(52, 51, 51);
+    background-color: black;
+    width: 4em;
+  }
+  .nav__sidebar-tablet img {
+    width: 40px;
+    margin-top: 50px;
+  }
+  .instagram-logo--smallSize {
+    display: none;
+  }
+  .header {
+    display: none !important;
   }
 }
 
@@ -131,5 +162,10 @@
   background-color: black;
   }
 
+
+  .header {
+    display: none !important;
+  }
+  
 }
 

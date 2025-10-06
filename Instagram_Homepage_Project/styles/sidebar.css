@@ -55,3 +55,19 @@
 .nav__sidebar-mobile {
   display: none;
 }
+
+
+
+
+
+.nav__sidebar-tablet {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.instagram-logo-mini {
+  width: 45px;
+}
