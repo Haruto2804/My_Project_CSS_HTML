@@ -49,3 +49,9 @@
 .home-link__fontWeight {
   font-weight: bolder;
 }
+
+
+
+.nav__sidebar-mobile {
+  display: none;
+}

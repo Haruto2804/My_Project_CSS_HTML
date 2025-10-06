@@ -13,9 +13,12 @@
   <link rel="stylesheet" href="styles/popUpSearch.css">
   <link rel="stylesheet" href="styles/notification-popup.css">
   <link rel="stylesheet" href="styles/responsive design.css">
+  <link rel="stylesheet" href="styles/header.css">
 </head>
 <body>
   <main class = "main-project">
+
+           <!-- NAV PC -->
           <nav id = "sidebar" class = "sidebar">
             <div class = "sidebar__instagramLogo">
               <img id = "sidebar_text_logo_instagram" class = "instagram-logo--smallSize" src="icons-sidebar/Instagram-logo.png" alt="">
@@ -63,13 +66,23 @@
               </div>
             </div>
           </nav>
+           <!-- NAV MOBILE -->
+          <nav class = 'nav__sidebar-mobile'>
+              <img src="./icons-sidebar/home_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              <img class = "header__arrow"src="./icons-sidebar/search_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              <img sidebar__link src="./icons-sidebar/add_2_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              <img sidebar__link src="./icons-sidebar/animated_images_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              <img class = "user-current-picture"src="./profile-picture/haruto_picture.jpg" alt="">
+          </nav>
+
 
           <div class = "main-feed">
             <div class = "header">
               <div class ="header-left">
                 <img id = "sidebar_text_logo_instagram" class = "instagram-logo--smallSize" src="icons-sidebar/Instagram-logo.png" alt="">
-                <img src="./header-icon/arrow_drop_down_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <img  src="./header-icon/arrow_drop_down_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" alt="">
               </div>
+              <input type="text" class = "header__search-bar" placeholder="Search">
             <div class ="header-right">
               <div class = "header-notification-container">
                   <img src="./icons-post/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg" alt="">

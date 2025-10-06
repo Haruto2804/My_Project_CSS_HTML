@@ -1,22 +1,59 @@
-/*  MOBILE */
-@media screen and (max-width: 750px) {
-  /* SIDEBAR */
-  .sidebar p {
-    display: none;
+/*  MOBILE AND TABLET*/
+@media screen and (max-width:69.9375em) {
+  .nav__sidebar-mobile img {
+    width: 2.5em;
   }
-  .sidebar {
-    position: fixed;
+  .nav__sidebar-mobile {
+    
+    display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 7%;
+    gap: 10px;
+    background-color: black;
+    position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
+    height:60px;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
+    padding: 0 50px;
+  }
+  .user-current-picture {
+    width: 45px;
   }
   .messages-pos-fixed {
     display: none;
   }
+  .sidebar p {
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+  .sidebar img {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+
+}
+
+
+
+
+
+/* MOBILE */
+@media screen and (max-width: 46.188em) {
+  /* SIDEBAR */
+  .header__search-bar {
+    display: none;
+  }
+  .nav__sidebar-mobile img {
+  object-fit: contain;
+  width:30px;
+}
   .sidebar__link {
     width: 100%;
     margin-left: 0px;
@@ -62,73 +99,26 @@
   .suggestion-bar {
     display: none;
   }
-  .header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .instagram-logo--smallSize {
-    margin: 0;
-    margin-left: 15px;
-    margin-top: 5px;
-  }
-  .header-right {
-    margin-right: 10px;
-    display: flex;
-    gap: 15px
-  }
-  .header-notification-container {
-    position: relative;
-  }
-  .dot-notification {
-    position: absolute;
-    background-color: rgb(236, 14, 14);
-    top: -19px;
-    right: -2px;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-  }
-  .dot-messages {
-    width: 15px;
-    height: 15px;
-    text-align: center;
-    font-size: 12px;
-    top:-6px;
-    left: 13px;
-    font-weight: 700;
-  }
 }
 
 /* Tablet */
-@media screen and (min-width: 751px) and (max-width: 1023px) {
+@media screen and (min-width: 46.25em) and (max-width: 69.9375em) {
   .suggestion-bar {
     display: none;
   }
   .header {
-    display: none;
+    display: block;
+  }
+  .main-feed {
+    margin-left: 0;
   }
   .sidebar {
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width:15%;
-  gap:10px;
-  border-right: 0.25px solid rgb(52, 51, 51);
-  background-color: red;
-  }
-  .sidebar p {
-    width: 20%;
-    display: none
+    display: none;
   }
 }
 
 /* LAPTOP */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .sidebar {
   display: flex;
   flex-direction: column;
@@ -140,5 +130,6 @@
   border-right: 0.25px solid rgb(52, 51, 51);
   background-color: black;
   }
+
 }
 

@@ -1,0 +1,60 @@
+.instagram-logo--smallSize {
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  .header-right {
+    margin-right: 10px;
+    display: flex;
+    gap: 15px
+  }
+  .header-notification-container {
+    position: relative;
+  }
+  .dot-notification {
+    position: absolute;
+    background-color: rgb(236, 14, 14);
+    top: -19px;
+    right: -2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+  }
+  .dot-messages {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    top:-6px;
+    left: 13px;
+    font-weight: 700;
+  }
+    .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+.header__search-bar {
+  outline: none;
+  display: flex;
+  flex: 1;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 5px;
+  height: 2.5em;
+  background-color: rgb(48, 47, 47);
+  border: none;
+  padding-left: 10px;
+  font-size: 17px;
+  color: white;
+}
