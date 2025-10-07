@@ -1,0 +1,69 @@
+.nav-mobile {
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  flex-direction: column;
+  gap: 10px;
+  width: 85%;
+  background-color: white;
+  overflow-y: auto;
+  z-index: 200;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all ease 1s;
+}
+.nav-mobile.showUp {
+  transform: translateX(0);
+  opacity: 1;
+}
+.nav__item-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav__item {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  cursor: pointer;
+  border-color: blue;
+  height:2em;
+  padding: 15px 15px;
+}
+.nav__arrow {
+  width: 1.5em;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 199;
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
+.nav__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav__item--container {
+  display:flex; 
+  align-items:center; 
+  gap: 15px
+}
+
+.nav__item:hover {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.nav__item:active {
+  transform: scale(0.99);
+}
