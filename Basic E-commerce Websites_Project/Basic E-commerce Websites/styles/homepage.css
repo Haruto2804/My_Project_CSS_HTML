@@ -166,12 +166,17 @@
   width: 10em;
   height:10em;
   cursor: pointer;
+  object-fit: cover;
 }
 .product-name {
   width:10em;
   white-space: wrap;
   color: gray;
   cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .product-rating {
   width:10em;
@@ -302,16 +307,13 @@
 .products__label {
   transition: background-color ease-in-out 0.5s;
 }
-.products__label:active {
-  transform: scale(0.55);
-} 
-
-
-.products__label:hover {
+.products__label.active  {
   background-color: white;
   color: black;
   box-shadow: 3px 3px 3px rgba(116, 160, 221, 0.3);
-}
+} 
+
+
 .sales-off {
   position: absolute;
   top: 0;
