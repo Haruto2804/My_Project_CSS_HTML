@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extra Exerciser 2 - Todo List</title>
+    <style>
+      body {
+        background-color: lightpink;
+        font-family: Arial;
+      }
+      .todo-Input-Container {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+      .todoName-input {
+        outline: none;
+        padding: 10px 20px;
+        background-color: lightgoldenrodyellow;
+        border: none;
+        border-radius: 10px;
+      }
+      .description-todo-input {
+        outline: none;
+        background-color: lightblue;
+        border: none;
+        border-radius: 10px;
+        padding: 0px 10px;
+      }
+      .date-input {
+        height: 2%;
+      }
+      .todo-Input-Container button {
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-weight: 700;
+      }
+      .todo-Input-Container button:active {
+        transform: scale(0.95);
+      }
+      .submit-button {
+        background-color: rgb(31, 137, 223);
+      
+      }
+      .reset-button,.delete-button {
+        background-color: rgb(198, 34, 34);
+      }
+      .Todo-item {
+        width:150px;
+        height:300px;
+      }
+      .todoList-grid {
+        margin-top: 20px;
+        background-color: lightslategray;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        place-items: center;
+      }
+      .Todo-item {
+        background-color: aqua;
+        margin-top: 25px;
+        padding: 0px 20px;
+      }
+      .todo-name {
+        font-weight: 700;
+      }
+      .delete-button {
+        border: none;
+        width:100px;
+        height: 30px;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .delete-button:active {
+        transform: scale(0.95);
+      }
+  
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .deleteAll-button {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="js-container"></div>
+    <script src = "react-bacics.js" ></script>
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+ 
+
+      function DisplayTodo ({todoList, handleDelete}) {
+        return (
+          <>
+            {todoList.map(todo=> {
+              return (
+              <div class = "Todo-item">
+                <p class = "todo-name">{todo.name}</p>
+                <p class = "description-todo">{todo.description}</p>
+                <p class = "date-Todo">{todo.date}</p>
+                <button 
+                onClick = {()=> handleDelete(todo.id)}
+                class = "delete-button">Delete</button>
+              </div>
+            )
+            })}
+          
+          </>
+        )
+      }
+
+      function TodoInputComponent ({todo,setTodo}) { // Component dùng để nhập liệu Todo
+        // BẢN NHÁP, TODO NGƯỜI DÙNG ĐANG NHẬP, CHƯA CẬP NHẬT
+        const [formData, setFormData] = React.useState ({
+          name: '',
+          description: '',
+          date: '',
+          id: crypto.randomUUID()
+        })
+        // function updateTodo (e) {
+        //   setTodo ()
+        // }
+        function handleInputChange (e) { // NHỮNG GÌ NGƯỜI DÙNG NHẬP SẼ CẬP NHẬT TRONG NÀY, 
+          const {name,value} = e.target;
+          setFormData(prevData => ({
+            ...prevData,
+            [name]: value
+          }));
+        console.log(formData);
+        }
+
+        function handleSubmit () { // SAU KHI NHẬP XONG THÌ CẬP NHẬT VÀO STATE TODO
+          // Kiểm tra xem đã nhập tên công việc chưa
+            if (!formData.name.trim()) {
+              alert('Vui lòng nhập tên công việc!');
+              return;
+              }
+                  // setTodo ([...todo,formData]);
+            setTodo ([...todo,formData]);
+
+
+            setFormData({ name: '', description: '', date: '',id: '' });
+        }
+        function resetAll () {
+          setTodo([]);
+        }
+
+        return (
+          <>
+            <div class = "todo-Input-Container">
+              <input class = "todoName-input" type="text" placeholder = "Todo name"
+              name = "name"
+              value = {formData.name}
+              onChange = {handleInputChange}
+              />
+
+
+              <textarea placeholder = "Nhập mô tả công việc của bạn"
+              class = "description-todo-input" rows = "2" cols = "50"
+              name = "description"
+              value = {formData.description}
+              onChange = {handleInputChange}
+              />
+
+
+              <input class = "date-input" type = "date" 
+              name = "date"
+              value = {formData.date}
+              onChange = {handleInputChange}
+              />
+
+
+              <button class = "submit-button" 
+              onClick = {handleSubmit}
+              >Submit</button>
+
+
+              <button 
+              onClick = {resetAll}
+              class = "reset-button">Reset</button>
+
+              
+              
+            </div>
+  
+          </>
+        )
+      }
+      function App () {
+        const [todo,setTodo] = React.useState ([{
+          name: 'Học React cùng Haruto',
+          description: 'Đã học được State, đang làm một số bài tập về State để củng cố kiến thức',
+          date: '2025/10/11',
+          id: crypto.randomUUID()
+
+        }]);
+          function handleDelete (todoIdDelete) {
+          const updateTodoList = todo.filter(item=> item.id !== todoIdDelete)
+          setTodo(updateTodoList);
+        }
+        return (
+          <>
+            <TodoInputComponent
+            todo = {todo}
+            setTodo = {setTodo}
+            />
+
+            <p class = "title">CÔNG VIỆC CẦN LÀM</p>
+            <div class = "todoList-grid">
+            {<DisplayTodo
+              todoList = {todo}
+              handleDelete = {handleDelete}
+            />}
+            </div>
+            
+            
+          </>
+      
+        )
+      }
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot (container). render (<App />)
+    </script>
+  </body>
+</html>

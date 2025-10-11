@@ -9,7 +9,7 @@ export const products = [{
     id: '3c2f1a0d-b1e5-4c7f-8e9a-2b3c4d5e6f70', // UUID mới
     name: 'Waguri Kaoruko Cosplay Trang Phục Nữ Sinh Hoa Nở Hương Thơm Dịu Dàng',
     image: './images/products/cosplay/Waguri Kaoruko_cosplay_Nusinh.webp', // Đã sửa
-    price: 9900000,
+    price: 990000,
     type: 'costume',
     rating: { stars: 4.5} 
 }, {
@@ -75,7 +75,16 @@ rating: { stars: 4} // Đã sửa
   price: 950000,
   type: 'costume',
   rating: { stars: 4.5} // Đã sửa
-}, {
+},
+{
+  id: '5b4a3d2c-1b0a-49f8-8e7d-6c5b4a3d2c1b', // UUID mới
+  name: 'Trang Phục Hoá Trang Cosplay Yae Miko(Genshin Impact)(Cosplay)',
+  image: './images/products/cosplay/yaemiko.webp', // Đã sửa
+  price: 375000,
+  type: 'costume',
+  rating: { stars: 4.5} // Đã sửa
+},
+{
   id: 'e0f98e7d-6c5b-4a3d-92c1-b0a9f8e7d6c5', // UUID mới
   name: 'Cosplay Attack on Titan Mikasa Ackerman',
   image: './images/products/cosplay/mikasa_ackerman_cosplay_costume.jpg', // Đã sửa
@@ -188,7 +197,7 @@ rating: { stars: 3.5}
   },
   {
     id: 'a3b4c5d6-e7f8-49a0-9b1c-3d4e5f6a7b8c',
-    name: 'Dell Xps 14 9440 (2024)',
+    name: 'Dell Xps 14 9440 - Intel® Core™ Ultra 7  | 32GB-1T SSD (2024)',
     image: './images/products/laptop/dell-xps-14-9440-2024-1705720785.jpg', // Đã sửa
     price: 40490000,
     type: 'laptop',
@@ -408,7 +417,7 @@ rating: { stars: 3.5}
   },
   {
     id: 'mb008-uuid-1008',
-    name: 'Vertu_Signature_S_Rose_Gold_Ceramic',
+    name: 'Vertu Signature S Rose Gold Ceramic VTS-004',
     image: './images/products/mobile/Vertu_Signature_S_Rose_Gold_Ceramic.png', // Đã sửa
     price: 185000000,
     type: 'mobile',
@@ -461,5 +470,118 @@ rating: { stars: 3.5}
     price: 2990000,
     type: 'mobile',
     rating: { stars: 5}
+},
+ {id: '1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d',
+    name: 'The Witcher 3: Wild Hunt - Complete Edition',
+    image: './images/products/game/the-witcher-3.webp',
+    price: 899000,
+    type: 'game',
+    rating: { stars: 5 }
+}, {
+    id: '2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e',
+    name: 'ELDEN RING SHADOW OF THE ERDTREE EDITION Scial Package PLJM-17352',
+    image: './images/products/game/elden-ring.webp',
+    price: 1100000,
+    type: 'game',
+    rating: { stars: 5 }
+}, {
+    id: '3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f',
+    name: 'Grand Theft Auto V - Premium Edition',
+    image: './images/products/game/gta5.webp',
+    price: 650000,
+    type: 'game',
+    rating: { stars: 4.5 }
+}, {
+    id: '4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a',
+    name: 'Cyberpunk 2077: Ultimate Edition - Version No bugs',
+    image: './images/products/game/cyperpunk2077.webp',
+    price: 950000,
+    type: 'game',
+    rating: { stars: 4 }
+}, {
+    id: '5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b',
+    name: 'Minecraft - Java & Bedrock Edition',
+    image: './images/products/game/minecraft.webp',
+    price: 750000,
+    type: 'game',
+    rating: { stars: 4.5 }
+}, {
+    id: '6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c',
+    name: 'Baldurs Gate III - Digital Deluxe Edition',
+    image: './images/products/game/baldurs_gate_3.webp',
+    price: 1200000,
+    type: 'game',
+    rating: { stars: 5 }
+}, {
+    id: '7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d',
+    name: 'The Legend of Zelda: Tears of the Kingdom',
+    image: './images/products/game/zelda_totk.webp',
+    price: 1490000,
+    type: 'game',
+    rating: { stars: 5 }
+}, {
+    id: '8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e',
+    name: 'Red Dead Redemption 2 Special Edition',
+    image: './images/products/game/rd2.webp',
+    price: 1200000,
+    type: 'game',
+    rating: { stars: 4.5 }
+}, {
+    id: '9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f',
+    name: 'Commandos Origins Deluxe Edition',
+    image: './images/products/game/commandos_origin.webp',
+    price: 1290000,
+    type: 'game',
+    rating: { stars: 5 }
+}, {
+    id: '0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a',
+    name: 'Among Us - Crewmate Edition (Nintendo Switch) - Goldfields Toys & Games',
+    image: './images/products/game/amongus.webp',
+    price: 700000,
+    type: 'game',
+    rating: { stars: 4 }
+}, {
+    id: '1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b',
+    name: 'Ghost Of Stushima Standard PS4 Special Edition ',
+    image: './images/products/game/gos.webp',
+    price: 1000000,
+    type: 'game',
+    rating: { stars: 4.5 }
+}, {
+    id: '1e2f3a4b-5c6d-7e8f-9j0b-1c2d3e4f5a6b',
+    name: 'Grand Theft Auto VI | Pre-Order | Bản trải ngiệm trước',
+    image: './images/products/game/gta6.webp',
+    price: 5990000,
+    type: 'game',
+    rating: { stars: 5 }
+}, {
+    id: '3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d',
+    name: 'Assassin’s Creed Mirage Deluxe Edition',
+    image: './images/products/game/Assassin’sCreed.webp',
+    price: 800000,
+    type: 'game',
+    rating: { stars: 4 }
+}, {
+    id: '4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e',
+    name: 'Call of Duty Modern Warfare II - Cross-Gen Bundle',
+    image: './images/products/game/callofduty.webp',
+    price: 1350000,
+    type: 'game',
+    rating: { stars: 4.5 }
+}, {
+    id: '5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f',
+    name: 'Final Fantasy XVI Unique Special Edition',
+    image: './images/products/game/ff16.webp',
+    price: 990000,
+    type: 'game',
+    rating: { stars: 4.5 }
+},
+{
+    id: '5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f',
+    name: 'Black Myth Wukong - Deluxe Edition',
+    image: './images/products/game/bmw.webp',
+    price: 850000,
+    type: 'game',
+    rating: { stars:  5}
 }
-]
+];

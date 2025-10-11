@@ -83,18 +83,10 @@
   gap: 30px;
   overflow-x: auto;
   white-space: nowrap;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE và Edge cũ */
   padding: 0 1em;
-}
-.header__row3::-webkit-scrollbar {
-  display: none;
 }
 .header__row3 p {
   cursor: pointer;
-}
-.header__row3 p:active {
-  transform: scale(0.95);
 }
 
 
@@ -105,14 +97,15 @@
   margin: 0;
 }
 .product {
+  font-size: 18px;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   background-color: white;
   border-radius: 5px;
   padding: 5px 5px;
-  
+  justify-content: space-between;
+  gap: 10px;
 }
 .buy-container  {
   display: flex;
@@ -132,12 +125,6 @@
   gap: 15px;
   overflow-x: auto;
 
-  /* ẩn thanh cuộn scoll bar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE và Edge cũ */
-}
-.products__categories::-webkit-scrollbar {
-  display: none;
 }
 .products__categories p {
   background-color: rgb(99, 159, 255);
@@ -152,8 +139,6 @@
 .products__categories p:active {
   transform: scale(0.95);
 }
-
-
 /* GRID-PRODUCTS */
 .products-grid {
   display: grid;
@@ -244,6 +229,7 @@
   width:10em;
   height:12em;
   object-fit: contain;
+  justify-content: space-between;
 
 }
 .showcase__product-name {
@@ -251,12 +237,10 @@
   font-size: 18px;
   width: 9em;
   margin-bottom: 0;
-  margin-left: 20px;
-
   /* giới hạn số dòng */
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* GIỚI HẠN TÊN SẢN PHẨM CHỈ HIỂN THỊ TỐI ĐA 3 DÒNG */
+    -webkit-line-clamp: 4; /* GIỚI HẠN TÊN SẢN PHẨM CHỈ HIỂN THỊ TỐI ĐA 3 DÒNG */ /* Standard property for compatibility */
     -webkit-box-orient: vertical;
 }
 .showcase__product-price {
@@ -305,14 +289,35 @@
   display: block;
 }
 .products__label {
+  position: relative;
   transition: background-color ease-in-out 0.5s;
 }
+.header__label {
+  position: relative;
+}
+
 .products__label.active  {
   background-color: white;
   color: black;
   box-shadow: 3px 3px 3px rgba(116, 160, 221, 0.3);
 } 
 
+.header__label p:after {
+  content: '';
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  height:3px;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transform-origin: left; /* bắt đầu từ trái */
+  transition: transform 0.5s ease-in-out;
+}
+.header__label p:hover::after {
+  width:100%;
+  transform: scaleX(1); /* kéo ra toàn chiều rộng */
+}
 
 .sales-off {
   position: absolute;
