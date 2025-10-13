@@ -13,7 +13,7 @@ import './ChatMessages.css'
               <img src = {RobotProfileImage}/>)}
             <div className = "chat-message-text">
                 {message}
-                <p className = 'sent-time'> {dayjs(time).format('HH:mm')}</p>
+                <p className = 'send-time'> {dayjs(time).format('HH:mm')}</p>
             </div>
             
             

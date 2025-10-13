@@ -1,6 +1,6 @@
 {
   "name": "chatbot-project",
-  "homepage": "https://haruto2804.github.io/Chat-Bot-Project",
+  "homepage": "https://Haruto2804.github.io/Chat-Bot-Project/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "dayjs": "^1.11.18",
